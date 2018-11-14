@@ -15,11 +15,11 @@ class UsersService {
         });
     }
 
-    createUser(username, password, options) {
-        
+    createUser(email, password, options) {
+
     }
 
-    authorizeUser(username, password, options) {
+    authorizeUser(email, password, options) {
 
     }
 }

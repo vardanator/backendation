@@ -8,6 +8,8 @@ const AppSettings = {
         email_maxlength: 255,
         password_minlength: 4,
         password_maxlength: 50,
+        phone_maxlength: 12,
+        phone_minlength: 5,
         points_comment: 1,
         points_rate: 1,
         points_subscription: 1,

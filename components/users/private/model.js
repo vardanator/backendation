@@ -50,7 +50,11 @@ let UsersSchema = new Schema({
         validate: Validator.isEmail
     },
     email_confirmed: Boolean,
-    phone: String,
+    phone: {
+        type: String,
+        minlength: UsersSettings.phone_minlength,
+        maxlength: UsersSettings.phone_maxlength
+    },
     avatar: {type: Schema.ObjectId, ref: 'photos'},
     cover: {type: Schema.ObjectId, ref: 'photos'},
     gender: Boolean,
