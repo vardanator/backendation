@@ -23,7 +23,6 @@ let UsersSchema = new Schema({
     },
     username: {
             type: String,
-            index: { unique: true },
             lowercase: true,
             trim: true,
             minlength: UsersSettings.username_minlength,
